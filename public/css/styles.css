@@ -1,0 +1,45 @@
+body, html
+{
+    height: 100%;
+    color: #73879C;
+    font-size: 13px;
+}
+.FormLogin
+{
+    width: 26%;
+    background: #fff;
+    box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15) !important;
+    height: auto;
+    border-radius: 8px;
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.FormLogin .logotipo
+{
+    margin-bottom: 3em;
+}
+.FormLogin .input-group
+{
+    width: 100%;
+}
+.btn-purple
+{
+    background-color: #4E66FF;
+    border-color: #344FF9;
+    color: #fff
+}
+.btn-purple:hover
+{
+    background-color: #344FF9;
+    border-color: #344FF9;
+    color: #fff
+}
+.input-group {
+    margin-bottom: 10px;
+}
+.btn-link
+{
+    margin-left: .5em;
+}

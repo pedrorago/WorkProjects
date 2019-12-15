@@ -1,0 +1,17 @@
+<section>
+    <div class='MesmaClasse' ></div>
+    <div class='MesmaClasse' ></div>
+    <div class='MesmaClasse' ></div>
+    <div class='MesmaClasse' ></div>
+    <div class='MesmaClasse' ></div>
+</section>
+
+.MesmaClasse {
+    width 20px;
+    height: 200px;
+}
+
+.MesmaClasse:nth-child()
+{
+
+}

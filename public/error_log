@@ -1,0 +1,19 @@
+[12-Jul-2019 13:34:58 America/Sao_Paulo] PHP Warning:  Module 'imagick' already loaded in Unknown on line 0
+[12-Jul-2019 13:34:58 America/Sao_Paulo] PHP Warning:  Module 'SourceGuardian' already loaded in Unknown on line 0
+[12-Jul-2019 13:34:58 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '?' in /home2/agenc958/cg/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 242
+[12-Jul-2019 13:35:04 America/Sao_Paulo] PHP Warning:  Module 'imagick' already loaded in Unknown on line 0
+[12-Jul-2019 13:35:04 America/Sao_Paulo] PHP Warning:  Module 'SourceGuardian' already loaded in Unknown on line 0
+[12-Jul-2019 13:35:04 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '?' in /home2/agenc958/cg/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 242
+[12-Jul-2019 13:35:19 America/Sao_Paulo] PHP Warning:  Module 'imagick' already loaded in Unknown on line 0
+[12-Jul-2019 13:35:19 America/Sao_Paulo] PHP Warning:  Module 'SourceGuardian' already loaded in Unknown on line 0
+[12-Jul-2019 13:35:19 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '?' in /home2/agenc958/cg/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 242
+[12-Jul-2019 13:41:00 America/Sao_Paulo] PHP Warning:  Module 'imagick' already loaded in Unknown on line 0
+[12-Jul-2019 13:41:00 America/Sao_Paulo] PHP Warning:  Module 'SourceGuardian' already loaded in Unknown on line 0
+[12-Jul-2019 13:41:00 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '?' in /home2/agenc958/cg/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 242
+[12-Jul-2019 17:03:11 UTC] PHP Fatal error:  Cannot use Illuminate\Support\Facades\Request as Request because the name is already in use in /home2/agenc958/cg/app/Http/Controllers/IssuesController.php on line 6
+[12-Jul-2019 17:03:13 UTC] PHP Fatal error:  Cannot use Illuminate\Support\Facades\Request as Request because the name is already in use in /home2/agenc958/cg/app/Http/Controllers/IssuesController.php on line 6
+[12-Jul-2019 17:03:47 UTC] PHP Fatal error:  Cannot use Illuminate\Support\Facades\Request as Request because the name is already in use in /home2/agenc958/cg/app/Http/Controllers/IssuesController.php on line 6
+[26-Jul-2019 15:35:50 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 49504256 bytes) in /home2/agenc958/cg/vendor/filp/whoops/src/Whoops/Resources/views/header.html.php on line 17
+[26-Jul-2019 15:35:50 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 49476192 bytes) in /home2/agenc958/cg/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 968
+[26-Jul-2019 15:38:55 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 49504256 bytes) in /home2/agenc958/cg/vendor/filp/whoops/src/Whoops/Resources/views/header.html.php on line 17
+[26-Jul-2019 15:38:55 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 49475096 bytes) in /home2/agenc958/cg/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 968

@@ -1,0 +1,14 @@
+SELECT count(issues.id) from issues where issues.version_active = 1 and issues.status_id = 3
+Resultado = 25
+
+SELECT count(issues.id) from issues where issues.version_active = 1 and issues.status_id = 5
+Resultado = 33
+
+Soma: 58
+
+SELECT count(issues.id) from issues where issues.version_active = 1
+Resultado = 148
+
+58 /148 * 100
+
+39.18%
