@@ -436,7 +436,7 @@ else{
 </div>
 
 <input type="hidden" name="author_name" value="">
-<input type="hidden" name="author_pic" value="http://gestao.agenciacapiba.com.br/img/avatar.png">
+<input type="hidden" name="author_pic" value="">
 
 
         </div>

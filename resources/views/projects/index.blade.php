@@ -15,8 +15,8 @@
 <div class="d-sm-flex justify-content-between mb-4">
 
     <div class="d-sm-flex flex-column">
-    <h1 class="h3 mb-0 text-gray-800">Capiba Projetos</h1>
-    <p class="mb-4" style="margin-top: .4em">Aqui se encontra todos os projetos e sub projetos da Capiba.</p>
+    <h1 class="h3 mb-0 text-gray-800">Projetos</h1>
+    <p class="mb-4" style="margin-top: .4em">Aqui se encontra todos os projetos e sub projetos.</p>
     @if(Auth::user()->type == 1 )
         <div class="buttons" style="margin-bottom: 1.4em">
             <a href="{{ route('projects.create') }}" class="btn btn-secondary btn-icon-split">

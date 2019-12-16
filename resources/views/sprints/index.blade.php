@@ -9,9 +9,9 @@
 
  <!-- Page Heading -->
 
- <h1 class="h3 mb-2 text-gray-800">Capiba Sprints</h1>
+ <h1 class="h3 mb-2 text-gray-800">Sprints</h1>
 
-          <p class="mb-4">Aqui se encontra o quadro de todas as sprints criadas pela Capiba</a>.</p>
+          <p class="mb-4">Aqui se encontra o quadro de todas as sprints criadas pela sua empresa</a>.</p>
           @foreach (['danger', 'warning', 'success', 'info'] as $msg)
           @if(Session::has('alert-' . $msg))
     
