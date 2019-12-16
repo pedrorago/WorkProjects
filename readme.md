@@ -21,6 +21,8 @@ O projeto foi inteiramente feito em Laravel PHP utilizando MYSQL. Todo seu Front
 
 <img src='https://i.ibb.co/mSXJVC8/Screenshot-29.png'>
 <br/>
-<img src='https://ibb.co/thxdNN2'>
+<img src='https://i.ibb.co/6Z1dppt/Screenshot-2.png'>
 <br/>
-<img src='https://ibb.co/sHD6pGB'>
+<img src="https://i.ibb.co/GQM11ZN/Screenshot-11-2.png" alt="Screenshot-11-2" border="0">
+<br/>
+<img src="https://i.ibb.co/ySMYm13/Screenshot-1.png" alt="Screenshot-1" border="0">
