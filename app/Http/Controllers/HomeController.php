@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Sprint;
 use App\Issues;
+use Illuminate\Support\Facades\Hash;
 
 use Illuminate\Support\Facades\Auth;
 use App\User;
@@ -29,8 +30,6 @@ class HomeController extends Controller
      */
     public function index()
     {
-
-
         $versions = Sprint::currentSprint();
         $user = Auth::user();
 
