@@ -19,6 +19,7 @@ O projeto foi inteiramente feito em Laravel PHP utilizando MYSQL. Todo seu Front
 
 <p><strong><i>***********************</i></strong></p>
 
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/mSXJVC8/Screenshot-29.png" alt="Screenshot-29" border="0"></a>
 <a href="https://ibb.co/wrWMh70"><img src="https://i.ibb.co/R40zTNv/Screenshot-1.png" alt="Screenshot-1" border="0"></a>
 <a href="https://ibb.co/thxdNN2"><img src="https://i.ibb.co/6Z1dppt/Screenshot-2.png" alt="Screenshot-2" border="0"></a>
 <a href="https://ibb.co/GkLTN3B"><img src="https://i.ibb.co/rMSsNfT/Screenshot-3.png" alt="Screenshot-3" border="0"></a>
@@ -32,4 +33,3 @@ O projeto foi inteiramente feito em Laravel PHP utilizando MYSQL. Todo seu Front
 <a href="https://ibb.co/sHD6pGB"><img src="https://i.ibb.co/ySMYm13/Screenshot-1.png" alt="Screenshot-1" border="0"></a>
 <a href="https://ibb.co/9H4ffxS"><img src="https://i.ibb.co/GQM11ZN/Screenshot-11-2.png" alt="Screenshot-11-2" border="0"></a>
 <a href="https://ibb.co/MGKq0KK"><img src="https://i.ibb.co/8dGFZGG/Screenshot-11.png" alt="Screenshot-11" border="0"></a>
-<a href="https://imgbb.com/"><img src="https://i.ibb.co/mSXJVC8/Screenshot-29.png" alt="Screenshot-29" border="0"></a>
