@@ -6,9 +6,9 @@ O projeto foi inteiramente feito em Laravel PHP utilizando MYSQL. Todo seu Front
 </legend>
 <br/>
 <br/>
-<p>Instalação:</p>
+<p><strong>Instalação</strong>>:</p>
 <p>Ao realizar a clonagem da aplicação, renomeio o arquivo <i>.env.example</i> para <i>.env</i></p>
 <p>Em seguida rode o comando: <i>php artisan key:generate </i> para gerar uma nova key.</p>
 <p>Configure o banco de dados dentro do arquivo <i>.env</i></p>
 <p>Faça um dump do arquivo \database\geprojetos.sql no seu banco de dados.</p>
-<p>Execute o comando: <i>composer update && composer install</i> para concluir a instalação.</p>
+<p>Execute o comando: <i>composer install</i> para concluir a instalação.</p>
