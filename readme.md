@@ -1,22 +1,8 @@
-<img src="https://i.ibb.co/TqcrhTG/Logo-Marca-5.png" style="margin-top: 2em;">
-<legend><strong>WorkProjects</strong> é um sistema para gestão de projetos internos de uma empresa. Tem total flexibilidade de uso e conta com tecnologias confiáveis.
-Nele é possível criar perfis com cargos direcionados e personaliza-los, trocando a foto, mudando o nome etc. 
-É possível utilizar o sistema de Sprints para organizar a semana de trabalho. Sua dashboard conta com graficos e dados semanais para ajudar na hora de fechar a semana de trabalho e acompanhar o rendimento da equipe.
-O projeto foi inteiramente feito em Laravel PHP utilizando MYSQL. Todo seu Front-end foi feito em SASS e Javascript (JQUERY).
+<img src="http://workprojects.tk/img/logotipo/Logotipo_Color.png" style="margin-top: 2em;">
+<legend><strong>WorkProjects</strong> It is a system for managing a company's internal projects. It has total flexibility of use and has technologies.
+    Furthermore, it is possible to create profiles with targeted loads and personalize them, changing the photo, changing the name etc.
+    It is possible to use the Sprint's system to organize a work week. Its panel has graphs and semantic data to help close the work week and monitor the team's performance.
 </legend>
 <br/>
 <br/>
-<p><strong>Instalação</strong>:</p>
-<p>Ao realizar a clonagem da aplicação, renomeio o arquivo <i>.env.example</i> para <i>.env</i></p>
-<p>Em seguida rode o comando: <i>php artisan key:generate </i> para gerar uma nova key.</p>
-<p>Configure o banco de dados dentro do arquivo <i>.env</i></p>
-<p>Faça um dump do arquivo \database\geprojetos.sql no seu banco de dados.</p>
-<p>Execute o comando: <i>composer install</i> para concluir a instalação.</p>
 
-<p><strong>Acesso Visitante</strong>:</p>
-<p>Login: <i>guest@geprojetos.com.br</i></p>
-<p>Senha: <i>gpvisitante</i></p>
-
-<p><strong><i>***********************</i></strong></p>
-<p>Link teste: </p>
-<a href="http://geprojetos-com.umbler.net/">http://geprojetos-com.umbler.net/</a>

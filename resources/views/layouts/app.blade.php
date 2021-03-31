@@ -80,7 +80,7 @@
             <div class="sidebar-brand-icon ">
               <img src="{{ asset('img/logotipo/LogoMarca-3.png') }}" alt="">
             </div>
-            <div class="sidebar-brand-text mx-3" style='margin-left: .5em !important'>GeProjetos</div>
+            <div class="sidebar-brand-text mx-3" style='margin-left: .5em !important'>WorkProjects</div>
           </a>
     
           <!-- Divider -->

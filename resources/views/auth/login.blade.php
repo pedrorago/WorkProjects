@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>GeProjetos - Login</title>
+    <title>WorkProjects - Login</title>
 
     <!-- Scripts -->
 
@@ -44,7 +44,7 @@ background-repeat: repeat; background-image: url({{ asset('img/bgicons.svg') }})
         <form method="POST" class='FormLogin' action="{{ route('login') }}" aria-label="{{ __('Login') }}">
             @csrf
 
-            <img src="{{ asset('img/logotipo/LogoMarca-5.png') }}"  class='logotipo' alt="">
+            <img src="{{ asset('img/logotipo/Logotipo_Color.png') }}"  class='logotipo' alt="">
         
         <div class="input-group">
             <span class="input-group-addon" id="basic-addon1">@</span>
