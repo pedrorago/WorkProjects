@@ -82,7 +82,7 @@ background-repeat: repeat; background-image: url({{ asset('img/bgicons.svg') }})
         <div class="form-group input-group row mb-0" style='margin-top: .5em'>
                 <div class="col-md-8 offset-md-4" style='padding: 0em; width: 100%;'>
                     <button type="submit" class="btn btn-purple">
-                        {{ __('Entrar') }}
+                        {{ __('sign in') }}
                     </button>
 <!-- 
                     <a class="btn btn-link" href="{{ route('password.request') }}" style='padding: 0'>
