@@ -6,7 +6,7 @@
 
  <!-- Page Heading -->
 
- <h1 class="h3 mb-2 text-gray-800">GeProjetos Backlog</h1>
+ <h1 class="h3 mb-2 text-gray-800">WorkProjects Backlog</h1>
 
           <p class="mb-4">Aqui é se encontra um quadro geral de todas as atividades do backlog. É possível fazer alterações, pesquisas e consultas nessa parte da aplicação.</a>.</p>
 

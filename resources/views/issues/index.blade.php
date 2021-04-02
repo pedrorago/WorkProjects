@@ -6,7 +6,7 @@
 
 <!-- Page Heading -->
 
-<h1 class="h3 mb-2 text-gray-800">GeProjetos Atividades</h1>
+<h1 class="h3 mb-2 text-gray-800">WorkProjects Atividades</h1>
 
 <p class="mb-4">Aqui é se encontra um quadro geral de todas as atividades. É possível fazer alterações, pesquisas e consultas nessa parte da aplicação.</a>.</p>
 
