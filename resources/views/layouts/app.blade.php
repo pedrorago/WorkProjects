@@ -98,7 +98,7 @@
     
           <!-- Heading -->
           <div class="sidebar-heading">
-            Utilidades
+            {{__('utilities')}}
           </div>
     
           z
@@ -106,19 +106,19 @@
           <li class="nav-item">
             <a class="nav-link collapsed" href="" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
               <i class="fas fa-fw fa-chart-area"></i>
-              <span>Tarefas</span>
+              <span>{{__('tasks')}}</span>
             </a>
             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
               <div class="bg-white py-2 collapse-inner rounded">
-                <h6 class="collapse-header">OPÇÕES</h6>
-                <a class="collapse-item" href="{{ route('issues.index', app()->getLocale()) }}">Listar todas</a>
+                <h6 class="collapse-header">{{__('options')}}</h6>
+                <a class="collapse-item" href="{{ route('issues.index', app()->getLocale()) }}">{{__('list all')}}</a>
                 @guest
                 @else
-                <a class="collapse-item" href="{{ route('issues.index', ['attr' => Auth::user()->id, 'sprint' => $sprint, app()->getLocale()])  }}">Minhas tarefas</a>
-                <a class="collapse-item" href="{{ route('issues.index', ['function' => Auth::user()->function_id, 'sprint' => $sprint, app()->getLocale()])  }}">Listar minha área</a>
+                <a class="collapse-item" href="{{ route('issues.index', ['attr' => Auth::user()->id, 'sprint' => $sprint, app()->getLocale()])  }}">{{__('my tasks')}}</a>
+                <a class="collapse-item" href="{{ route('issues.index', ['function' => Auth::user()->function_id, 'sprint' => $sprint, app()->getLocale()])  }}">{{__('list my role')}}</a>
                 @endguest
-                <a class="collapse-item" href="{{ route('issues.index', ['sprint' => $sprint, app()->getLocale()]) }}">Listar sprint atual</a>
-                <a class="collapse-item" href="{{ route('issues.create', app()->getLocale()) }}">Criar uma nova</a>
+                <a class="collapse-item" href="{{ route('issues.index', ['sprint' => $sprint, app()->getLocale()]) }}">{{__('list atual sprint')}}</a>
+                <a class="collapse-item" href="{{ route('issues.create', app()->getLocale()) }}">{{__('create new task')}}</a>
               </div>
             </div>
           </li>
@@ -126,19 +126,19 @@
                     <li class="nav-item">
             <a class="nav-link" href="{{ route('projects.index', app()->getLocale())}}">
               <i class="fas fa-fw fa-folder"></i>
-              <span>Projetos</span></a>
+              <span> {{__('projects')}}</span></a>
         </li>
 
             <li class="nav-item">
                     <a class="nav-link" href="/backlog">
                       <i class="fas fa-fw fa-folder"></i>
-                      <span>Backlog</span></a>
+                      <span> {{__('backlog')}}</span></a>
                 </li>
               
         <li class="nav-item">
                 <a class="nav-link" href="{{ route('sprints.index', app()->getLocale()) }}">
                   <i class="fas fa-fw fa-table"></i>
-                  <span>Sprints</span></a>
+                  <span> {{__('sprints')}}</span></a>
             </li>
           <!-- Nav Item - Utilities Collapse Menu -->
           <!-- <li class="nav-item">
@@ -236,7 +236,7 @@
               <!-- Topbar Search -->
               <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
                 <div class="input-group">
-                  <input type="text" class="form-control bg-light border-0 small" placeholder="Pesquisar por..." aria-label="Search" aria-describedby="basic-addon2">
+                  <input type="text" class="form-control bg-light border-0 small" placeholder="{{ __('search')}}" aria-label="Search" aria-describedby="basic-addon2">
                   <div class="input-group-append">
                     <button class="btn btn-primary" type="button">
                       <i class="fas fa-search fa-sm"></i>
@@ -470,7 +470,7 @@
             <footer class="sticky-footer bg-white">
                     <div class="container my-auto">
                       <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Rago's Inc 2019</span>
+                        <span>Copyright &copy; Rago's Inc 2021</span>
                       </div>
                     </div>
                   </footer>

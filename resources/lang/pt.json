@@ -3,5 +3,29 @@
     "forget password?": "Esqueceu a senha?",
     "remember password": "Lembrar senha",
     "passoword": "Senha",
-    "current sprint": "Sprint Atual"
+    "current sprint": "Sprint Atual",
+    "search": "Pesquisar por...",
+    "sprint tasks": "Tarefas da sprint",
+    "tasks": "Tarefas",
+    "sprint completion": "Conclusão da sprint",
+    "pending tasks": "Tarefas pendentes",
+    "delevoper": "Desenvolvedor",
+    "notice board": "Quadro de avisos",
+    "projects": "Projetos",
+    "quick history": "Histórico rápido",
+    "changed the task task": "alterou a tarefa",
+    "to": "para",
+    "utilities": "Utilidades",
+    "options": "Opções",
+    "list all": "Listar todas",
+    "my tasks": "Minhas tarefas",
+    "list my role": "Listar minha área",
+    "list atual sprint": "Listar sprint atual",
+    "create new task": "Criar nova tarefa",
+    "backlog": "Backlog",
+    "sprints": "Sprints",
+    "management": "Gestão"
+
+
+
 }

@@ -36,8 +36,8 @@
                 <div class="card-body">
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Tarefas da sprint:</div>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800">{{ $totalIssues }} Tarefas</div>
+                      <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">{{ __('sprint tasks') }}:</div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-800">{{ $totalIssues }} {{ __('tasks') }}</div>
                     </div>
                     <div class="col-auto">
                       <i class="fas fa-chart-pie fa-2x text-gray-300"></i>
@@ -53,7 +53,7 @@
                 <div class="card-body">
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Conclusão da sprint</div>
+                      <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">{{ __('sprint completion') }}</div>
                       <div class="row no-gutters align-items-center">
                         <div class="col-auto">
                           <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">{{ $porcentagem }}%</div>
@@ -79,7 +79,7 @@
                 <div class="card-body">
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Tarefas pendentes</div>
+                      <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">{{ __('pending tasks') }}</div>
                       <div class="h5 mb-0 font-weight-bold text-gray-800">{{ $pending }}</div>
                     </div>
                     <div class="col-auto">
@@ -140,7 +140,7 @@
             <div class="col-xl-4 col-lg-5">
                 <div class="card shadow mb-4" style='height: 29.5em'>
                     <div class="card-header py-3">
-                      <h6 class="m-0 font-weight-bold text-primary">Quadra de avisos</h6>
+                      <h6 class="m-0 font-weight-bold text-primary">{{ __('notice board') }}</h6>
                     </div>
                     <div class="card-body quadroAvisos">
                         
@@ -176,7 +176,7 @@
               <div class="card shadow mb-4" style="    width: 50%;
               height: 31em;">
                 <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-primary">Projetos</h6>
+                  <h6 class="m-0 font-weight-bold text-primary">{{ __('projects') }}</h6>
                 </div>
                 <div class="card-body">
                   <h4 class="small font-weight-bold">Desenvolvimento <span class="float-right">20%</span></h4>
@@ -210,7 +210,7 @@
               <div class="card shadow mb-4 cardDoing">
                   <!-- Card Header - Dropdown -->
                   <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                    <h6 class="m-0 font-weight-bold text-primary">Histórico rápido</h6>
+                    <h6 class="m-0 font-weight-bold text-primary">{{ __('quick history')}}</h6>
                     <div class="dropdown no-arrow">
                       <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
@@ -234,8 +234,8 @@
                         <img src="{{ $value->author_pic_histories }}" alt="">
                       </span>
                       <p><strong>{{ $value->author_name_histories }}</strong>
-                        alterou a tarefa tarefa: <a href="{{ route('issues.show', ['issue' => $value->	issue_id, app()->getLocale()]) }}">{{ $value->issue_name }}</a>
-                        para<strong>  {{ $value->issue_status}}</strong>
+                        {{ __('changed the task task')}}: <a href="{{ route('issues.show', ['issue' => $value->	issue_id, app()->getLocale()]) }}">{{ $value->issue_name }}</a>
+                        {{__('to')}}<strong>  {{ $value->issue_status}}</strong>
                       </p>
                     </div>
   
