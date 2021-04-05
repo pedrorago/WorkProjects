@@ -14,10 +14,10 @@
             <!-- Earnings (Monthly) Card Example -->
             <div class="col-xl-3 col-md-6 mb-4">
               <div class="card cardLinkBody border-left-primary shadow h-100 py-2">
-                <a href="{{ route('issues.index', ['sprint' => $versions->id]) }}" class="card-body cardLink">
+                <a href="{{ route('issues.index', ['sprint' => $versions->id, app()->getLocale()]) }}" class="card-body cardLink">
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">SPRINT ATUAL:</div>
+                      <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">{{ __('current sprint') }}:</div>
                       <div class="h5 mb-0 font-weight-bold text-gray-800">
                       {{ $versions->name }}
                       </div>
@@ -234,7 +234,7 @@
                         <img src="{{ $value->author_pic_histories }}" alt="">
                       </span>
                       <p><strong>{{ $value->author_name_histories }}</strong>
-                        alterou a tarefa tarefa: <a href="{{ route('issues.show', ['issue' => $value->	issue_id]) }}">{{ $value->issue_name }}</a>
+                        alterou a tarefa tarefa: <a href="{{ route('issues.show', ['issue' => $value->	issue_id, app()->getLocale()]) }}">{{ $value->issue_name }}</a>
                         para<strong>  {{ $value->issue_status}}</strong>
                       </p>
                     </div>

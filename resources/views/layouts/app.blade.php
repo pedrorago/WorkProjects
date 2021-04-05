@@ -101,11 +101,7 @@
             Utilidades
           </div>
     
-          <!-- <li class="nav-item">
-            <a class="nav-link" href="{{ route('issues.index') }}">
-              <i class="fas fa-fw fa-chart-area"></i>
-              <span>Atividades</span></a>
-        </li> -->
+          z
           <!-- Nav Item - Pages Collapse Menu -->
           <li class="nav-item">
             <a class="nav-link collapsed" href="" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
@@ -115,20 +111,20 @@
             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
               <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">OPÇÕES</h6>
-                <a class="collapse-item" href="{{ route('issues.index') }}">Listar todas</a>
+                <a class="collapse-item" href="{{ route('issues.index', app()->getLocale()) }}">Listar todas</a>
                 @guest
                 @else
-                <a class="collapse-item" href="{{ route('issues.index', ['attr' => Auth::user()->id, 'sprint' => $sprint])  }}">Minhas tarefas</a>
-                <a class="collapse-item" href="{{ route('issues.index', ['function' => Auth::user()->function_id, 'sprint' => $sprint])  }}">Listar minha área</a>
+                <a class="collapse-item" href="{{ route('issues.index', ['attr' => Auth::user()->id, 'sprint' => $sprint, app()->getLocale()])  }}">Minhas tarefas</a>
+                <a class="collapse-item" href="{{ route('issues.index', ['function' => Auth::user()->function_id, 'sprint' => $sprint, app()->getLocale()])  }}">Listar minha área</a>
                 @endguest
-                <a class="collapse-item" href="{{ route('issues.index', ['sprint' => $sprint]) }}">Listar sprint atual</a>
-                <a class="collapse-item" href="{{ route('issues.create') }}">Criar uma nova</a>
+                <a class="collapse-item" href="{{ route('issues.index', ['sprint' => $sprint, app()->getLocale()]) }}">Listar sprint atual</a>
+                <a class="collapse-item" href="{{ route('issues.create', app()->getLocale()) }}">Criar uma nova</a>
               </div>
             </div>
           </li>
 
                     <li class="nav-item">
-            <a class="nav-link" href="{{ route('projects.index')}}">
+            <a class="nav-link" href="{{ route('projects.index', app()->getLocale())}}">
               <i class="fas fa-fw fa-folder"></i>
               <span>Projetos</span></a>
         </li>
@@ -140,7 +136,7 @@
                 </li>
               
         <li class="nav-item">
-                <a class="nav-link" href="{{ route('sprints.index') }}">
+                <a class="nav-link" href="{{ route('sprints.index', app()->getLocale()) }}">
                   <i class="fas fa-fw fa-table"></i>
                   <span>Sprints</span></a>
             </li>
@@ -182,9 +178,9 @@
             <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
               <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">Cadastros:</h6>
-                <a class="collapse-item" href="{{ route('issues.create') }}">Criar Tarefas</a>
-                <a class="collapse-item" href="{{ route('sprints.create') }}">Criar Sprints</a>
-                <a class="collapse-item" href="{{ route('projects.create')}}">Criar Projetos</a>
+                <a class="collapse-item" href="{{ route('issues.create', app()->getLocale()) }}">Criar Tarefas</a>
+                <a class="collapse-item" href="{{ route('sprints.create', app()->getLocale()) }}">Criar Sprints</a>
+                <a class="collapse-item" href="{{ route('projects.create', app()->getLocale())}}">Criar Projetos</a>
                 <a class="collapse-item" href="/404">Criar Setor</a>
                 <a class="collapse-item" href="/404">Criar Área</a>
                 <a class="collapse-item" href="/404">Criar Usuário</a>
@@ -204,7 +200,7 @@
           @else
           <!-- Nav Item - Tables -->
           <li class="nav-item">
-            <a class="nav-link" href="{{ route('users.edit', Auth::user()->id) }}">
+            <a class="nav-link" href="{{ route('users.edit', [Auth::user()->id, app()->getLocale()]) }}">
               <i class="fas fa-fw fa-user"></i>
               <span>Usuário</span></a>
           </li>
@@ -399,7 +395,7 @@
              -->
                 @guest
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                    <a class="nav-link" href="{{ route('login, app()->getLocale()') }}">{{ __('Login') }}</a>
                 </li>
          
                 @else
@@ -430,14 +426,11 @@
                   </style>
                   <!-- Dropdown - User Information -->
                   <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                    <a class="dropdown-item" href="{{ route('users.edit', Auth::user()->id) }}">
+                    <a class="dropdown-item" href="{{ route('users.edit', [Auth::user()->id, app()->getLocale()]) }}">
                       <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                       Perfil
                     </a>
-                    <!-- <a class="dropdown-item" href="{{ route('users.edit', Auth::user()->id) }}">
-                      <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
-                      Configurações
-                    </a> -->
+            
                  
                     <div class="dropdown-divider"></div>
 
@@ -449,14 +442,14 @@
                         </a>
                     @endif
 
-                    <a class="dropdown-item" href="{{ route('logout') }}"
+                    <a class="dropdown-item" href="{{ route('logout', app()->getLocale()) }}"
                     onclick="event.preventDefault();
                                   document.getElementById('logout-form').submit();">
                       <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
 
                      Encerrar sessão
 
-                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                     <form id="logout-form" action="{{ route('logout', app()->getLocale()) }}" method="POST" style="display: none;">
                             @csrf
                         </form>
                     </a>

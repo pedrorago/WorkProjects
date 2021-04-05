@@ -12,14 +12,18 @@
 */
 
 
+Route::redirect('/', '/en/login');
+Route::redirect('/home', '/'.App::getLocale().'/home');
+
+Route::group(['prefix' => '{language}'], function(){
+    Auth::routes();
+});
 
 
-Auth::routes();
+Route::group(['middleware' => 'auth:web'], function(){
+    Route::group(['prefix' => '{language}'], function(){
 
-Route::middleware(['auth'])->group(function () {
-    
     Route::get('/', 'HomeController@index')->name('home');
-
     Route::get('/create', 'UserController@index');
 
     
@@ -44,4 +48,5 @@ Route::middleware(['auth'])->group(function () {
     Route::resource('/projects', 'ProjectsController');
 
     Route::get('/home', 'HomeController@index')->name('home');
+});
 });

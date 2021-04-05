@@ -41,7 +41,7 @@
 <body class="nav-md" style='background: rgba(93, 2, 73, 0.01); display: flex; align-items: center; justify-content: center; background-size: contain;
 background-repeat: repeat; background-image: url({{ asset('img/bgicons.svg') }})'>
     
-        <form method="POST" class='FormLogin' action="{{ route('login') }}" aria-label="{{ __('Login') }}">
+        <form method="POST" class='FormLogin' action="{{ route('login', app()->getLocale()) }}" aria-label="{{ __('Login') }}">
             @csrf
 
             <img src="{{ asset('img/logotipo/Logotipo_Color.png') }}"  class='logotipo' alt="">
@@ -59,7 +59,7 @@ background-repeat: repeat; background-image: url({{ asset('img/bgicons.svg') }})
         
         <div class="input-group">
             <span class="input-group-addon" id="basic-addon1"><i class="fas fa-key"></i></span>
-            <input id="password" type="password" placeholder="Senha"  class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" aria-describedby="basic-addon1" name="password" required>
+            <input id="password" type="password" placeholder="{{ __('passoword') }}"  class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" aria-describedby="basic-addon1" name="password" required>
             
             @if ($errors->has('password'))
             <span class="invalid-feedback" role="alert">
@@ -74,7 +74,7 @@ background-repeat: repeat; background-image: url({{ asset('img/bgicons.svg') }})
                     <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
                     
                     <label class="form-check-label" for="remember">
-                        {{ __('Lembrar senha') }}
+                        {{ __('remember password') }}
                     </label>
                 </div>
             </div>
@@ -84,18 +84,12 @@ background-repeat: repeat; background-image: url({{ asset('img/bgicons.svg') }})
                     <button type="submit" class="btn btn-purple">
                         {{ __('sign in') }}
                     </button>
-<!-- 
-                    <a class="btn btn-link" href="{{ route('password.request') }}" style='padding: 0'>
-                        {{ __('Esqueceu sua senha?') }}
-                    </a> -->
+
                     
                     <a class="btn btn-link" href="javascript:void(0)" style='padding: 0'>
-                        {{ __('Esqueceu sua senha?') }}
+                        {{ __('forget password?') }}
                     </a>
-<!-- 
-                     <li class="nav-item">
-              <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                </li> -->
+
                 </div>
             </div>
     </form>
