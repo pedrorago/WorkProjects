@@ -1,17 +1,12 @@
 @extends('layouts.app')
 
-
-
 @section('content')
-
-
-
 
 
 <div class="d-sm-flex justify-content-between flex-column mb-2">
     
-    <h1 class="h3 mb-0 text-gray-800">Configurações de usuário</h1>
-    <p class="mb-4" style="margin-top: .4em">Olá, {{ $user->name }}. Aqui está todas as suas informações</a>.</p>    
+    <h1 class="h3 mb-0 text-gray-800">{{__('user settings')}}</h1>
+    <p class="mb-4" style="margin-top: .4em">{{__('hello')}}, {{ $user->name }}. {{__('here is all your information')}}</a>.</p>    
     @foreach (['danger', 'warning', 'success', 'info'] as $msg)
     @if(Session::has('alert-' . $msg))
 
@@ -21,7 +16,7 @@
 </div>
 
 <div>
-    <form action="{{route('users.update', $user)}}"  enctype="multipart/form-data" class="form-horizontal" method="POST">
+    <form action="{{route('users.update', [app()->getLocale(), $user])}}"  enctype="multipart/form-data" class="form-horizontal" method="POST">
         @csrf
         @method('PATCH')
         <div>
@@ -34,7 +29,7 @@
                     <!-- Overflow Hidden -->
                     <div class="card mb-4">
                         <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">Quadro de configurações</h6>
+                            <h6 class="m-0 font-weight-bold text-primary">{{__('settings board')}}</h6>
                         </div>
                         <div class="card-body">
                             <!-- Criar uma sprint <code>aberta</code> torna todas as outras fechadas. -->
@@ -42,19 +37,19 @@
                             
                             <div class="form-group">
                                 
-                                <label for="name">Nome de usuário:</label>
+                                <label for="name">{{__('user name')}}:</label>
                                 
                                 <input type="text" id="name" <?php echo @(Auth::user()->email == 'guest@geprojetos.com.br' ? 'readonly disabled' : ''); ?> name="name" placeholder="Digite seu nome" class="form-control" value="{{ $user->name }}">
                                 
                             </div>
                             
                             <div class="form-group">
-                                <label for="email">E-mail de usuário:</label>
+                                <label for="email">{{__('user email')}}:</label>
                                 <input type="text" <?php echo @(Auth::user()->email == 'guest@geprojetos.com.br' ? 'readonly disabled' : ''); ?> id="email" name="email" placeholder="Digite seu email" class="form-control" value="{{ $user->email }}">
                             </div>
                             
                             <div class="form-group">
-                                <label for="function_name">Área do usuário:</label>
+                                <label for="function_name">{{__('user area')}}:</label>
                                 <input type="text" id="function_name" name="function_name" disabled class="form-control" value="{{ $function_user[0]->name }}">
                             </div>
                             
@@ -81,7 +76,7 @@
                                 <span class="icon text-white-50">
                                     <i class="fas fa-check"></i>
                                 </span>
-                                <span class="text">Confirmar</span>
+                                <span class="text">{{__('confirm')}}</span>
                             </button>
                             
                         </div>

@@ -6,9 +6,9 @@
 
 <!-- Page Heading -->
 
-<h1 class="h3 mb-2 text-gray-800">WorkProjects Atividades</h1>
+<h1 class="h3 mb-2 text-gray-800">WorkProjects {{__('tasks')}}</h1>
 
-<p class="mb-4">Aqui é se encontra um quadro geral de todas as atividades. É possível fazer alterações, pesquisas e consultas nessa parte da aplicação.</a>.</p>
+<p class="mb-4">{{__('here is an overview of all activities. it is possible to make changes, searches and queries in this part of the application')}}.</a>.</p>
 
 @foreach (['danger', 'warning', 'success', 'info'] as $msg)
 @if(Session::has('alert-' . $msg))
@@ -32,8 +32,8 @@
 <input type='hidden' id='serve' value='{{$serve}}'>
 <ul class='custom-menu shadow'>
   <input type='hidden' class='user' name='id_user' value='{{Auth::user()->id}}'>
-  <li class="menuLi six" ><a href="#" target="_blank" class='ListLink visuMenu'><img src="{{ asset('img/icons/open.png') }}"> Visualizar Tarefa</a></li>
-  <li class="menuLi first" data-action="first"><a href="" class='ListLink'> <img src="{{ asset('img/icons/Status.png') }}"> Editar Status <i class="material-icons">arrow_right</i></a>
+  <li class="menuLi six" ><a href="#" target="_blank" class='ListLink visuMenu'><img src="{{ asset('img/icons/open.png') }}"> {{__('view task')}}</a></li>
+  <li class="menuLi first" data-action="first"><a href="" class='ListLink'> <img src="{{ asset('img/icons/Status.png') }}"> {{__('edit status')}} <i class="material-icons">arrow_right</i></a>
     <form id="form_status" class='submenu'>
         @csrf
         @method('PUT')
@@ -53,7 +53,7 @@
         <input type="radio" name='status' value='5' hidden id='5'>
     </form>
   </li>
-  <li class="menuLi second" data-action="second"><a href="" class="ListLink"><img src="{{ asset('img/icons/Attr.png') }}"> Editar Atribuição<i class="material-icons">arrow_right</i></a>
+  <li class="menuLi second" data-action="second"><a href="" class="ListLink"><img src="{{ asset('img/icons/Attr.png') }}"> {{__('edit assignment')}}<i class="material-icons">arrow_right</i></a>
     <form id="form_attr" class='submenu'>
         @csrf
         @method('PUT')
@@ -67,7 +67,7 @@
         @endforeach
     </form>  
 </li>
-  <li class='menuLi third' data-action="third"><a href="" class="ListLink"><img src="{{ asset('img/icons/priority.png') }}"> Editar Prioridade <i class="material-icons">arrow_right</i></a>
+  <li class='menuLi third' data-action="third"><a href="" class="ListLink"><img src="{{ asset('img/icons/priority.png') }}"> {{__('edit priority')}} <i class="material-icons">arrow_right</i></a>
     <form id='form_priority' class='submenu'>
         @csrf
         @method('PUT')
@@ -85,7 +85,7 @@
 
     </form>  
 </li>
-  <li class="menuLi four" data-action="four"><a href="" class="ListLink"><img src="{{ asset('img/icons/move.png') }}"> Mover Tarefa <i class="material-icons">arrow_right</i></a>
+  <li class="menuLi four" data-action="four"><a href="" class="ListLink"><img src="{{ asset('img/icons/move.png') }}"> {{__('move task')}} <i class="material-icons">arrow_right</i></a>
 
     <form id='form_versios' class='submenu'>
         @csrf
@@ -109,7 +109,7 @@
   
   <div class="card-header py-3">
     
-    <h6 class="m-0 font-weight-bold text-primary">Quadro geral</h6>
+    <h6 class="m-0 font-weight-bold text-primary">{{__('general board')}}</h6>
     
   </div>
   
@@ -125,19 +125,19 @@
             
             <th scope="col">ID</th>
             
-            <th scope="col">Projeto</th>
+            <th scope="col">{{__('project')}}</th>
             
-            <th scope="col">Título</th>
+            <th scope="col">{{__('title')}}</th>
             
-            <th scope="col">Tipo</th>
+            <th scope="col">{{__('section')}}</th>
             
-            <th scope="col">Área</th>
-            <th scope="col">Prioridade</th>
+            <th scope="col">{{__('role')}}</th>
+            <th scope="col">{{__('priority')}}</th>
             <th scope="col">Status</th>
             
             
             <th scope="col">Sprint</th>
-            <th scope="col" style="width: 73px !important">Prazo</th>
+            <th scope="col" style="width: 73px !important">{{__('deadline')}}</th>
             <!-- <th scope="col" style='min-width: 5em;'>Extras</th> -->
             <th scope="col" style='width: 30px !important' >Extras</th>
             
@@ -157,12 +157,12 @@
               
               
               
-              <th scope="row">#<a href="{{ route('issues.show', ['issue' => $issue->id]) }}" class='idIssue'>{{$issue->id}}</a></th>
+              <th scope="row">#<a href="{{ route('issues.show', [ app()->getLocale(), 'issue' => $issue->id]) }}" class='idIssue'>{{$issue->id}}</a></th>
               
               <td>{{$issue->project}}</td>
               
               <td class="NameTD">
-                <a href="{{ route('issues.show', ['issue' => $issue->id]) }}">{{$issue->subject}}</a>
+                <a href="{{ route('issues.show', [ app()->getLocale(), 'issue' => $issue->id]) }}">{{$issue->subject}}</a>
                 
                 @if($issue->status == 'Fazendo')
                 <div class="statusBox">
@@ -235,7 +235,7 @@
                     </div>
                     @if(Auth::user()->type == 1)
                     
-                    <form action="{{ route('issues.destroy', ['issue' => $issue->id]) }}" method="post" class='formDelete'>
+                    <form action="{{ route('issues.destroy', [ app()->getLocale(), 'issue' => $issue->id]) }}" method="post" class='formDelete'>
                       @csrf
                       
                       @method('DELETE')

@@ -12,6 +12,7 @@
     "delevoper": "Desenvolvedor",
     "notice board": "Quadro de avisos",
     "projects": "Projetos",
+    "project": "Projeto",
     "quick history": "Histórico rápido",
     "changed the task task": "alterou a tarefa",
     "to": "para",
@@ -24,7 +25,51 @@
     "create new task": "Criar nova tarefa",
     "backlog": "Backlog",
     "sprints": "Sprints",
-    "management": "Gestão"
+    "management": "Gestão",
+    "registrations": "Cadastros",
+    "create tasks": "Criar tarefas",
+    "create sprints": "Criar sprints",
+    "create projects": "Criar projetos",
+    "create section": "Criar setor",
+    "create role": "Criar área",
+    "create user": "Criar usuário",
+    "user": "Usuáiro",
+    "increments": "Incrementos",
+    "statistics": "Estátisticas",
+    "reports": "Relatórios",
+    "alert center": "Central de Alertas",
+    "profile": "Perfil",
+    "new user": "Novo usuário",
+    "logout": "Encerrar sessão",
+    "user settings": "Configurações de usuário",
+    "here is all your information": "Aqui está todas as suas informações",
+    "settings board": "Quadro de configurações",
+    "user name:": "Nome de usuário",
+    "user email": "E-mail de usuário",
+    "user area": "Área do usuário",
+    "confirm": "Confirmar",
+    "hello": "Olá",
+    "here is an overview of all activities. it is possible to make changes, searches and queries in this part of the application": "Aqui é se encontra um quadro geral de todas as atividades. É possível fazer alterações, pesquisas e consultas nessa parte da aplicação",
+    "general board": "Quadro geral",
+    "titulo": "Título",
+    "section": "Setor",
+    "priority": "Prioridade",
+    "deadline": "Prazo",
+    "role": "Área",
+    "view task": "Visualizar tarefa",
+    "edit status": "Editar status",
+    "edit assignment": "Editar atribuição",
+    "edit priority": "Editar prioridade",
+    "move task": "Mover tarefa"
+
+
+
+    
+
+
+
+
+
 
 
 

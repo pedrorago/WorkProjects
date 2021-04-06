@@ -173,21 +173,21 @@
           <li class="nav-item">
             <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
               <i class="fas fa-fw fa-cog"></i>
-              <span>Gestão</span>
+              <span>{{__('management')}}</span>
             </a>
             <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
               <div class="bg-white py-2 collapse-inner rounded">
-                <h6 class="collapse-header">Cadastros:</h6>
-                <a class="collapse-item" href="{{ route('issues.create', app()->getLocale()) }}">Criar Tarefas</a>
-                <a class="collapse-item" href="{{ route('sprints.create', app()->getLocale()) }}">Criar Sprints</a>
-                <a class="collapse-item" href="{{ route('projects.create', app()->getLocale())}}">Criar Projetos</a>
-                <a class="collapse-item" href="/404">Criar Setor</a>
-                <a class="collapse-item" href="/404">Criar Área</a>
-                <a class="collapse-item" href="/404">Criar Usuário</a>
+                <h6 class="collapse-header">{{ __('registrations') }}:</h6>
+                <a class="collapse-item" href="{{ route('issues.create', app()->getLocale()) }}">{{__('create tasks')}}</a>
+                <a class="collapse-item" href="{{ route('sprints.create', app()->getLocale()) }}">{{__('create sprints')}}</a>
+                <a class="collapse-item" href="{{ route('projects.create', app()->getLocale())}}">{{__('create projects')}}</a>
+                <a class="collapse-item" href="/404">{{__('create section')}}</a>
+                <a class="collapse-item" href="/404">{{__('create role')}} </a>
+                <a class="collapse-item" href="/404">{{__('create user')}}</a>
                 <div class="collapse-divider"></div>
-                <h6 class="collapse-header">Incrementes:</h6>
-                <a class="collapse-item" href="/404">Estátisticas</a>
-                <a class="collapse-item" href="/404">Relátorios</a>
+                <h6 class="collapse-header">{{__('increments')}}:</h6>
+                <a class="collapse-item" href="/404">{{__('statistics')}}</a>
+                <a class="collapse-item" href="/404">{{__('reports')}}</a>
               </div>
             </div>
           </li>
@@ -202,7 +202,7 @@
           <li class="nav-item">
             <a class="nav-link" href="{{ route('users.edit', [Auth::user()->id, app()->getLocale()]) }}">
               <i class="fas fa-fw fa-user"></i>
-              <span>Usuário</span></a>
+              <span>{{__('user')}}</span></a>
           </li>
         @endguest
           <!-- Divider -->
@@ -281,7 +281,7 @@
                   <!-- Dropdown - Alerts -->
                 <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">
                     <h6 class="dropdown-header">
-                      Central de Alertas
+                      {{__('alert center')}}
                     </h6>
 
                    <a class="dropdown-item d-flex align-items-center" href="#">
@@ -426,9 +426,9 @@
                   </style>
                   <!-- Dropdown - User Information -->
                   <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                    <a class="dropdown-item" href="{{ route('users.edit', [Auth::user()->id, app()->getLocale()]) }}">
+                    <a class="dropdown-item" href="{{ route('users.edit', [app()->getLocale(),Auth::user()->id]) }}">
                       <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                      Perfil
+                      {{__('profile')}}
                     </a>
             
                  
@@ -438,7 +438,7 @@
                     @if(Auth::user()->type == 1)
                         <a class="dropdown-item" href="/create">
                         <i class="fas fa-plus fa-sm fa-fw mr-2 text-gray-400"></i>
-                        Novo usuário
+                        {{__('new user')}}
                         </a>
                     @endif
 
@@ -447,7 +447,7 @@
                                   document.getElementById('logout-form').submit();">
                       <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
 
-                     Encerrar sessão
+                      {{__('logout')}}
 
                      <form id="logout-form" action="{{ route('logout', app()->getLocale()) }}" method="POST" style="display: none;">
                             @csrf

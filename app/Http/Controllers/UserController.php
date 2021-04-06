@@ -20,7 +20,7 @@ class UserController extends Controller
     {
         return view('auth.register');
     }
-    public function edit(User $user)
+    public function edit($request, User $user)
     {   
         $user = Auth::user();
         

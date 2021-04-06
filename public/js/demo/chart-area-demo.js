@@ -44,7 +44,7 @@ var myLineChart2 = new Chart(chat, {
   data: {
     labels:['Backlog', 'Sprint 033', 'Sprint 034', 'Sprint 035'],
     datasets: [{
-      label: "Tarefas para "+functions,
+      label: "Tasks to "+functions,
       lineTension: 0.3,
       backgroundColor: "rgba(78, 115, 223, 0.05)",
       borderColor: "rgba(78, 115, 223, 1)",
